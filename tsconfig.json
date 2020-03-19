@@ -12,12 +12,13 @@
       "sourceMap": true,
       "strict": true,
       "noEmit": true,
-      "noImplicitAny": true,
-      "noImplicitThis": true,
+      "noImplicitAny": false,
+      "noImplicitThis": false,
       "noUnusedLocals": true,
       "noUnusedParameters": true,
       "experimentalDecorators": true,
       "importHelpers": true,
+      "allowSyntheticDefaultImports": true,
       "baseUrl": ".",
       "paths": {
         "~/*": [
@@ -30,7 +31,8 @@
       "types": [
         "@types/node",
         "@nuxt/types",
-        "@nuxtjs/axios"
+        "@nuxtjs/axios",
+        "@types/jest"
       ]
     },
     "exclude": [

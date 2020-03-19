@@ -1,6 +1,6 @@
 import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators'
-import MISSION_API from '~/services/missions'
 import { IMission } from '~/models/mission'
+import MISSION_API from '~/services/missions'
 
 @Module({ name: 'missions', stateFactory: true, namespaced: true })
 export default class Missions extends VuexModule {
@@ -8,6 +8,7 @@ export default class Missions extends VuexModule {
 
     @Mutation
     public setMissions(missions: IMission[]) {
+        debugger
         this.missions = missions
     }
 
