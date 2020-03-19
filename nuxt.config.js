@@ -33,6 +33,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxt/typescript-build'
   ],
   /*
   ** Nuxt.js modules
@@ -54,7 +55,9 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
-    }
+   babel: {
+      plugins: ['transform-class-properties']
+    },
+    extend (/*config, ctx*/) { }
   }
 }
